@@ -1,0 +1,36 @@
+.merc-info{
+    background: black;
+    padding :75px 0 20px;
+}
+.merc-info-content{
+    width: 92%;
+    margin:0 auto;
+    background: black;
+    p{
+        font-size: 14px;
+        margin-bottom: 0;
+    }
+}
+@media screen and (max-width:768px){
+    .info-content-2{
+        margin-right:221px !important;
+    }
+}
+@media screen and (max-width:740px){
+    .info-content-2{
+        margin-right:191px !important;
+    }
+}
+@media screen and (max-width:670px){
+    .info-content-2{
+        margin-right:101px !important;
+    }
+}
+@media screen and (max-width:576px){
+    .info-content-2{
+        margin-right:50px !important;
+    }
+    .info-content-1{
+        margin-right: 2rem !important;
+    }
+}

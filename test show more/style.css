@@ -1,0 +1,47 @@
+/* body{
+    background: black;
+}
+.container{
+    padding: 50px 0;
+}
+.content{
+    background: white;
+    height:auto;
+    width: 100%;
+    margin-top: 30px;
+}
+.img-col img{
+width: 100%;
+}
+.boxDescription{
+    padding: 30px;
+}
+.img-hidden,.img-hidden1,.img-hidden2,.img-hidden3{
+    display: none;
+}
+.grid-item img{
+    width: 100%;
+}
+.grid-container,#hidden{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:1px;
+}
+#hidden{
+    margin-top: 1px;
+    display: none;
+}
+.welcome-img{
+    position: relative;
+    width: 300px;
+}
+.welcome-img img{
+width:100%;
+}
+.welcome-img::after{
+    content: '';
+    width:100%;
+    height:3px;
+    display: block;
+    background:red;
+} */

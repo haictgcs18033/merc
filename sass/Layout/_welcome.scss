@@ -1,0 +1,85 @@
+.welcome {
+    background: black;
+}
+.welcome-text {
+    background-color: black;
+}
+.welcome-content {
+    width: 85%;
+    margin: 0 auto;
+    h2 {
+        font-size: 34px;
+    }
+    p {
+        font-size: 14px;
+    }
+    a {
+        color: #00adef;
+    }
+    button {
+        background-color: #00adef;
+        color: white;
+        border: #4dc6f4;
+        padding: 10px;
+        margin-top: 30px;
+        &:hover {
+            background-color: #0088c6;
+        }
+    }
+}
+// Welcome img
+
+.welcome-img {
+   
+    width: 85%;
+    margin: 0 auto;
+    background: black;
+    .row {
+        border-bottom: none;
+        border:none;
+    }
+    .welcome-img-item {
+        position: relative;
+      
+        img {
+            width: 100%;
+        }
+        &::after {
+            content: "";
+            width: 100%;
+            height: 7px;
+            display: block;
+            bottom: 0;
+            left: 0;
+            background: black;
+            z-index: 10;
+      
+            transition: all 0.3s;
+        }
+     
+    }
+    .welcome-img-item {
+        &:hover {
+            cursor: pointer;
+            &::after {
+                transform: translateY(-7px);
+                background: #00adef;
+            }
+        }
+    }
+}
+@media screen and (max-width:768px){
+    .she-channel,.me-channel{
+        padding-right: 3px;
+    }
+    .museum-channel,.eq-channel{
+        padding-left:3px;
+    }
+    .welcome-content{
+        width: 90%;
+        margin:0 auto;
+        button{
+            width: 100%;
+        }
+    }
+}

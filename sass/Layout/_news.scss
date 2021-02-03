@@ -1,0 +1,152 @@
+.news {
+    background-color: black;
+}
+.news-title {
+    padding: 60px 30px 20px;
+    a {
+        text-decoration: none;
+        padding-bottom: 17px;
+        color: white;
+        &:hover {
+            color: #00adef;
+            border-bottom: 1px solid #00adef;
+        }
+    }
+    .active {
+        color: #00adef;
+        border-bottom: 1px solid #00adef;
+    }
+   .nav-pills{
+      display: flex;
+      justify-content: center;
+       .nav-link{
+           border-radius: 0;
+       }
+   }
+  
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+    color: #00adef;
+    background-color: black;
+}
+.container-fluid {
+    padding: 0 0;
+}
+.news-div {
+    padding: 20px 0;
+}
+
+// .col-xl-8,.col-xl-4{
+//     padding: 0 0;
+// }
+
+.new-item {
+    padding: 0 0;
+    position: relative;
+    overflow: hidden;
+    margin: 1px;
+    img {
+        width: 100%;
+    }
+    .new-content {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.281);
+        color: white;
+        width: 100%;
+        transform: translateY(50px);
+        transition: all 0.5s;
+    }
+    .new-content-2 {
+        transform: translateY(70px);
+    }
+}
+.new-item {
+    &:hover {
+        .new-content {
+            transform: translateY(0);
+            background-color: rgba(0, 0, 0, 0.884);
+        }
+    }
+}
+// Grid
+.merc-grid,
+.merc-grid-second ,.merc-grid-third,.merc-grid-four{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.merc-grid-item1 {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+}
+.merc-grid-item10 {
+    grid-column: 1 / span 2;
+    grid-row: 5 / span 2;
+}
+
+#showMore,#showMore2 ,#showMore3 {
+    padding: 6px 20px;
+    border: none;
+    background: $color-black-1;
+    color: white;
+}
+.merc-grid-item19 {
+    grid-column: 1 / span 2;
+    grid-row: 2 / span 2;
+}
+.merc-grid{
+    .appear-in-tablet{
+        display: none;
+    }
+}
+// responsive
+@media screen and (max-width: 1200px) {
+    .merc-grid ,.merc-grid-second,.merc-grid-third,.merc-grid-four{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .merc-grid-item1,.merc-grid-item19 {
+        grid-column: 1 / span 1;
+        grid-row: 1 / span 1;
+    }
+    .merc-grid-item10 {
+        grid-column: 1 / span 1;
+        grid-row: 5 / span 1;
+    }
+    .merc-grid-item19{
+        grid-row: 2 / span 1;
+    }
+    .merc-grid{
+        .appear-in-tablet{
+            display: block;
+        }
+    }
+}
+@media screen and (max-width:768px){
+    .merc-grid ,.merc-grid-second,.merc-grid-third,.merc-grid-four{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .new-item{
+        overflow: visible;
+        background: black;
+        font-size: 20px;
+        pointer-events: none;
+        margin-bottom: 70px;
+        p{
+            display: none;
+        }
+        .new-content{
+            transform: translateY(60px);
+            h3{
+                font-size: 22px;
+            }
+        }
+    }
+ 
+    
+}
+

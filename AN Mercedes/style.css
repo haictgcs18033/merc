@@ -1,0 +1,220 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+#header-section {
+  background-color: black;
+  position: fixed;
+  color: white;
+  width: 100%;
+  height: 102px;
+  -webkit-transition: top 0.7s;
+  transition: top 0.7s;
+  padding: 3px 0;
+}
+
+#header-section .sub-navbar {
+  margin-right: 53px;
+}
+
+#header-section .sub-navbar__1 {
+  margin-right: 21px;
+}
+
+#header-section .sub-navbar__2 {
+  margin-right: 38px;
+}
+
+#header-section span:first-child {
+  display: none;
+}
+
+#header-section span a {
+  color: white;
+  text-decoration: none;
+}
+
+#header-section span a:hover, #header-section span a.active {
+  color: #00b7ff;
+}
+
+#header-section span a i {
+  margin-right: 9px;
+  font-size: 9px;
+  border: 1.8px solid white;
+  padding: 2.8px 4.5px;
+}
+
+#header-section span a .fa, #header-section span a .fab, #header-section span a .fad, #header-section span a .fal, #header-section span a .far, #header-section span a .fas {
+  line-height: inherit;
+}
+
+#header-section span a:hover > i {
+  border: 1.8px solid #00b7ff;
+}
+
+#header-section .main-navbar .logo img {
+  float: left;
+  margin-top: -8px;
+  margin-left: 53px;
+}
+
+#header-section .main-navbar .logo h6 {
+  float: left;
+  margin-left: 65px;
+  margin-top: 35px;
+}
+
+#header-section .main-navbar .logo h6 a {
+  color: white;
+}
+
+#header-section .main-navbar .logo h6 a:hover {
+  text-decoration: none;
+}
+
+#header-section .main-navbar nav {
+  width: 100%;
+}
+
+#header-section .main-navbar nav ul {
+  float: right;
+  margin-right: 53px;
+  list-style: none;
+}
+
+#header-section .main-navbar nav ul li {
+  display: inline-block;
+  line-height: 40px;
+  margin-top: 30px;
+  margin-left: 20px;
+}
+
+#header-section .main-navbar nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#header-section .main-navbar nav ul li a.active, #header-section .main-navbar nav ul li a:hover {
+  color: #00b7ff;
+}
+
+#header-section .main-navbar nav .checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  margin-right: 53px;
+  line-height: 80px;
+  cursor: pointer;
+  display: none;
+}
+
+#header-section .main-navbar nav .cancelbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  margin-right: 53px;
+  line-height: 80px;
+  cursor: pointer;
+  display: none;
+}
+
+#header-section .main-navbar nav .search-responsive {
+  font-size: 20px;
+  color: white;
+  float: right;
+  margin-right: 20px;
+  line-height: 80px;
+  cursor: pointer;
+  display: none;
+}
+
+#header-section .main-navbar nav #check {
+  display: none;
+}
+
+@media screen and (max-width: 1280px) {
+  #header-section .sub-navbar {
+    margin-right: 23px;
+  }
+  #header-section .main-navbar nav {
+    position: relative;
+  }
+  #header-section .main-navbar nav .checkbtn {
+    display: inline;
+    margin-right: 20px;
+    font-size: 18px;
+  }
+  #header-section .main-navbar nav .checkbtn:hover, #header-section .main-navbar nav .checkbtn:active {
+    color: #00b7ff;
+  }
+  #header-section .main-navbar nav .cancelbtn {
+    display: none;
+    margin-right: 20px;
+    font-size: 18px;
+  }
+  #header-section .main-navbar nav .cancelbtn:hover, #header-section .main-navbar nav .cancelbtn:active {
+    color: #00b7ff;
+  }
+  #header-section .main-navbar nav .search-responsive {
+    display: inline;
+    margin-right: 15px;
+    font-size: 15px;
+  }
+  #header-section .main-navbar nav .search-responsive:hover, #header-section .main-navbar nav .search-responsive:active {
+    color: #00b7ff;
+  }
+  #header-section .main-navbar nav ul {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: black;
+    opacity: 0;
+    text-align: center;
+    -webkit-transition: all 0.8s;
+    transition: all 0.8s;
+  }
+  #header-section .main-navbar nav ul li {
+    display: block;
+    margin: 35px 0;
+    line-height: 30px;
+  }
+  #header-section .main-navbar nav ul li a {
+    font-size: 20px;
+  }
+  #header-section .main-navbar nav ul li a:hover, #header-section .main-navbar nav ul li a.active {
+    background: none;
+    color: #00b7ff;
+  }
+  #header-section .main-navbar nav #check:checked ~ ul {
+    top: 60px;
+    opacity: 1;
+  }
+  #header-section .main-navbar nav #check:checked ~ .checkbtn {
+    display: none;
+  }
+  #header-section .main-navbar nav #check:checked ~ .cancelbtn {
+    display: inline;
+    margin-right: 20px;
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #header-section .sub-navbar__1 {
+    display: none;
+  }
+  #header-section .sub-navbar__2 {
+    display: none;
+  }
+  #header-section .sub-navbar .info-icon {
+    display: inline-block;
+  }
+}
+/*# sourceMappingURL=style.css.map */

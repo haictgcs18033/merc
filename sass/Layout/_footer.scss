@@ -1,0 +1,77 @@
+.footer {
+    background-color: black;
+}
+.footer-content {
+    width: 90%;
+    margin: 0 auto;
+    .subject {
+        border-bottom: 1px solid #999;
+        padding: 20px 0;
+        margin-bottom: 30px;
+    }
+    .more-topic {
+        padding-left: 0;
+    }
+    .row2 {
+        border-bottom: none;
+    }
+    .col-xl-3 {
+        h2 {
+            color: white;
+        }
+        ul {
+            list-style: none;
+        }
+        a {
+            color: #999;
+            transition: all 0.5s;
+            &:hover {
+                text-decoration: none;
+                color: #00adef;
+            }
+        }
+    }
+    .footer-content2 {
+        display: none;
+        .col-xl-12 {
+            .more-topic,
+            .shoping,
+            .all-about-car,
+            .discover {
+                h3 {
+                    color: white;
+                    padding: 20px 0;
+                    border-bottom: 1px solid #999;
+                    margin-bottom: 20px;
+                }
+                ul {
+                    list-style: none;
+                    margin-bottom: 0;
+                }
+                a {
+                    color: #999;
+                    transition: all 0.5s;
+                    &:hover {
+                        text-decoration: none;
+                        color: #00adef;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:1024px){
+ 
+    .subject{
+        display: none;
+    }
+    .row2{
+        display: none;
+    }
+    .footer-content{
+        .footer-content2{
+            display: block;
+        }
+    }
+   
+}

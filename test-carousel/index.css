@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.item {
+    background: red;
+}
+
+/* .merc-carousel-content {
+    position: absolute;
+    top: 40px;
+    left: 100px;
+} */
+
+.merc-carousel-content h3 {
+    color: white;
+    font-size: 48px;
+}
+
+.owl-next, .owl-prev {
+    position: absolute;
+    font-size: 115px !important;
+    top: 28%;
+    left: 20px;
+    color: white !important;
+    transition: all 0.5s;
+}
+
+.owl-next {
+    left: unset;
+    right: 0;
+}
+.owl-next:hover, .owl-prev:hover{
+    background: none !important;
+}
+.owl-next:focus, .owl-prev:focus{
+
+    outline: none;
+}
+p{
+    background: red;
+}

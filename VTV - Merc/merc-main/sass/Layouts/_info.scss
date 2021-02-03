@@ -1,0 +1,19 @@
+.mercInfo{
+    background-color: $color-black-0;
+    
+    &__title{
+        display: flex;
+        justify-content: flex-start;
+
+        p{
+            // margin-right: 30px;
+        }
+        
+        // <576
+    @include responsive('small'){
+        p{
+            display: block;
+        }
+    }
+    }
+}

@@ -1,0 +1,484 @@
+header {
+    background-color: black;
+}
+// position fixed with modal
+
+.header-content {
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    padding: 0 30px;
+    background: black;
+    transition: all 0.5s;
+}
+.modal-content {
+    position: absolute;
+    z-index: 1060;
+}
+.provider-privacy {
+    color: white;
+    font-size: 14px;
+    a {
+        color: white;
+    }
+    .fa-info {
+        border: 1px solid white;
+        padding: 3px 8px;
+        font-size: 12px;
+    }
+    .provider,.provider-sm {
+        &:hover {
+            a {
+                text-decoration: none;
+                color: #00adef;
+            }
+
+            .fa-info {
+                border: 1px solid #00adef;
+            }
+        }
+    }
+
+    span {
+        &:hover {
+            a {
+                text-decoration: none;
+                color: #00adef;
+            }
+        }
+    }
+    .provider-sm {
+        display: none;
+    }
+}
+header {
+    .vehicle {
+        position: fixed;
+        top: 106px;
+        left: 0;
+        z-index: 0;
+        background: white;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        transition: all 0.5s;
+        .fa-times {
+            position: absolute;
+            font-size: 30px;
+            right: 35px;
+            top: 20px;
+            &:hover{
+                cursor: pointer;
+                color: #00adef;
+            }
+        }
+    }
+    .carousel-hidden {
+        margin-top: 120px;
+      
+    }
+    .vehicle-content {
+        display: grid;
+        width: 90%;
+        margin: 0 auto;
+        grid-template-columns: repeat(5, 1fr);
+    }
+    .vehicle-content-child {
+        text-align: center;
+        background: white;
+    }
+}
+// Carousel for slide from right to left
+header{
+    .vehicle-small{
+        position: fixed;
+        top:127px;
+        width: 100%;
+        height:100%;
+        z-index: 2000;
+        background: white;
+        transform: translateX(100%);
+        .back-menu{
+        
+           position: absolute;
+            font-size: 16px;
+       padding: 30px 20px;
+       width: 100%;
+         
+            &:hover{
+               cursor: pointer; 
+            }
+        }
+
+    }
+}
+header {
+    .nav-hidden {
+        height: 0;
+        // opacity: 0;
+        width: 100%;
+        position: fixed;
+        z-index: 1000;
+        top: 105px;
+        left: 0;
+        background-color: black;
+        overflow-x: hidden;
+        transition: 1s;
+
+        a {
+            margin: 17px 0;
+            text-decoration: none;
+            text-align: center;
+            font-size: 25px;
+            color: white;
+            display: block;
+            transition: 0.3s;
+            &:hover {
+                color: #4dc6f4;
+            }
+        }
+        .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+            margin-top: 41px;
+        }
+    }
+}
+header {
+    .sticky-right-nav {
+        .product-page,
+        .configure,
+        .newsletter,
+        .share {
+            position: fixed;
+            right: 0;
+            top: 50%;
+            width: 207px;
+            background: $color-black-1;
+
+            margin: 1px;
+            padding: 10px;
+            transform: translateX(168px);
+            transition: all 0.5s;
+            z-index: 3000;
+            i {
+                font-size: 22px;
+            }
+            a {
+                color: white;
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+        .configure {
+            top: 57.3%;
+        }
+        .newsletter {
+            top: 64.4%;
+        }
+        .share {
+            top: 71.5%;
+        }
+        .product-page,
+        .configure,
+        .newsletter,
+        .share {
+            &:hover {
+                transform: translateX(0);
+            }
+        }
+    }
+    .sticky-bottom {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        z-index: 100;
+        background: black;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        display: none;
+        .product-page,
+        .configure,
+        .newsletter,
+        .share {
+            text-align: center;
+            background: #1f1f1f;
+            border: 1px solid black;
+            width: 100%;
+            padding: 20px 0;
+            i {
+                font-size: 44px;
+                color: white;
+                &:active {
+                    color: #00adef;
+                }
+            }
+            p {
+                color: white;
+                font-size: 20px;
+                margin-bottom: 0;
+            }
+        }
+        a {
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+    .share {
+        position: relative;
+        z-index: 30;
+
+        .dropup-content {
+            display: block;
+            position: absolute;
+            // Cho height : 0 overflow :hidden vao phan tu con vua co tac dung nhu opacity:0 vua co the thiet lap slide khi bam phan tu
+
+            overflow: hidden;
+            width: 100%;
+            background: #1f1f1f;
+            bottom: 116px;
+
+            z-index: 1;
+
+            ul {
+                list-style: none;
+                text-align: center;
+                margin-bottom: 0;
+                width: 100%;
+                li {
+                    padding: 20px 20px;
+                }
+                a {
+                    color: white;
+
+                    i {
+                        font-size: 22px;
+                    }
+                }
+            }
+        }
+    }
+}
+header {
+    .modal-header {
+        border-bottom: 0;
+    }
+}
+.btn {
+    &:hover {
+        color: #4dc6f4;
+    }
+}
+
+.nav-tabs {
+    .nav-link {
+        color: black;
+        &:hover {
+            border-color: transparent;
+        }
+        &:focus {
+            color: #00adef;
+        }
+    }
+    .nav-link.active {
+        &:hover {
+            border-color: #dee2e6 #dee2e6 #fff;
+        }
+    }
+}
+.tab-pane {
+    .checked {
+        position: relative;
+        .fa-check,
+        .fa-minus {
+            background-color: #00adef;
+            padding: 5px;
+            margin: 10px;
+            color: white;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+        .minus {
+            position: absolute;
+            top: 0;
+            left: 1px;
+            display: none;
+        }
+        .form-check-input{
+            width: 20px;
+            height: 20px;
+            margin-top: 0;
+        }
+        .form-check-label{
+            margin-left: 20px;
+        }
+    }
+    .check-2 {
+        .fa-check {
+            background-color: #999;
+        }
+    }
+    .check-warning {
+        // display: grid;
+        // grid-template-columns: repeat(3, 1fr);
+        .fa-exclamation-circle {
+            color: #999;
+            padding: 10px;
+            font-size: 21px;
+        }
+    }
+    .content-tab{
+        margin: 20px 10px;
+        h3{
+            font-size: 20px;
+        }
+        p{
+            font-size: 14px;
+        }
+    }
+}
+.all-check{
+    label{
+        font-size: 13px;
+    }
+}
+#accordion {
+    .btn {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        color: black;
+        text-decoration: none;
+        p {
+            margin-bottom: 0;
+        }
+
+        .fa-angle-down {
+            margin-left: auto;
+        }
+    }
+    .btn-link {
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    .card {
+        border: none;
+        .card-header {
+            background-color: white;
+        }
+    }
+}
+// .modal-header{
+//     button{
+//         .close:focus{
+//             outline: none;
+//         }
+//     }
+
+// }
+.close:not(:disabled):not(.disabled):focus,
+.close:not(:disabled):not(.disabled):hover {
+    outline: none;
+}
+//  Mui ten len xuong collapse
+#accordion button[aria-expanded="true"] .opened {
+    display: block;
+    color: #00adef;
+}
+#accordion button[aria-expanded="true"] p {
+    color: #00adef;
+}
+#accordion button[aria-expanded="true"] .closed {
+    display: none;
+}
+
+#accordion button[aria-expanded="false"] .opened {
+    display: none;
+}
+
+#accordion button[aria-expanded="false"] .closed {
+    display: block;
+}
+@media screen and (max-width:992px){
+    .nav-tabs{
+        font-size: 13px;
+    }
+}
+@media screen and (max-width: 768px) {
+    header {
+        .sticky-right-nav {
+            .product-page,
+            .configure,
+            .newsletter,
+            .share {
+                display: none;
+            }
+        }
+
+        .sticky-bottom {
+            display: flex;
+        }
+        .provider-icon {
+            font-size: 0;
+        }
+        .provider-news {
+            display: none;
+        }
+
+        .sticky-bottom {
+            .product-page,
+            .configure,
+            .newsletter,
+            .share {
+                padding: 10px 0;
+                i {
+                    font-size: 25px;
+                }
+                p {
+                    font-size: 14px;
+                }
+                .dropup-content {
+                    bottom: 72px;
+                }
+            }
+        }
+    }
+    .provider-privacy {
+        .provider {
+            display: none;
+        }
+        .provider-sm {
+            display: inline;
+            &:hover{
+                color: #00adef;
+            }
+        }
+        .provider1 {
+            margin-left: 5px !important;
+        }
+    }
+}
+@media screen and(min-width:1280px){
+    .vehicle-small{
+        display:none;
+    }
+}
+@media screen and (max-width: 576px) {
+    header {
+        .nav-hidden {
+            a {
+                margin: 14px 0;
+            }
+        }
+    }
+}

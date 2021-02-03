@@ -1,0 +1,45 @@
+// variable color
+$color-black-0: #000000; // default
+$color-black-1: #141414;
+$color-black-2: #1f1f1f;
+$color-gray-0:#dddddd;
+$color-gray-1: #999999;
+$color-gray-2:  #636363;
+$color-gray-3:  #3b3a3b;
+$color-white-0:#ffffff;
+$color-white-1: #ececec;
+$color-white-2: #efefef;
+$color-blue-0: #4dc6f4;
+$color-blue-1: #00adef;
+$color-red:#9f0002;
+
+// variable font-size
+$fs-0: 14px; //default
+$fs-1: 16px;
+$fs-2: 22px;
+$fs-3: 34px;
+$fs-4: 48px;
+
+
+//variable margin
+$mg-0: 2px;
+$mg-1: 10px;
+$mg-2: 25px;
+
+
+
+
+//variable font-weight
+$fw-normal: normal;
+$fw-bold-0: 600;
+$fw-bold-1: 700;
+$fw-bold: bold;
+
+
+//break points
+$breakpoints:(
+    'extra-large': 1200px,
+    'large' : 992px,
+    'medium' : 768px,
+    'small' : 576px,
+)

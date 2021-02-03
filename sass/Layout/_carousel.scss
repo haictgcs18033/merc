@@ -1,0 +1,202 @@
+// .owl-theme .owl-nav {
+//     margin-top: 0;
+// }
+.owl-next,
+.owl-prev {
+    position: absolute;
+    font-size: 70px !important;
+    left: 80px;
+    color: #333 !important;
+    transition: all 0.5s;
+}
+
+.owl-next {
+    left: unset;
+    right: 80px;
+}
+.owl-next:hover,
+.owl-prev:hover {
+    background: none !important;
+   
+}
+.owl-next:active,
+.owl-prev:active {
+    color: #00adef !important;
+}
+
+.owl-next:focus,
+.owl-prev:focus {
+    outline: none;
+}
+// .merc-carousel-item {
+//     position: relative;
+//     height: 650px;
+// transform: translateY(105px);
+//     img {
+//         width: 100%;
+//         height: 100%;
+//     }
+// }
+.owl-dot{
+    span{
+        margin-top: 80px !important;
+      background-color: #333 !important;
+        border-radius: 0 !important;
+        height: 5px !important ;
+        width: 70px !important;
+    }
+}
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
+    background-color: #00adef !important;
+}
+.carousel-item {
+    margin-top: 105px;
+}
+.carousel-control-next,
+.carousel-control-prev {
+    opacity: 1;
+    &:hover {
+        .previous,
+        .next {
+            opacity: 1;
+            color: #ccc;
+        }
+    }
+    &:active {
+        .previous,
+        .next {
+            color: #00adef;
+        }
+    }
+}
+.previous,
+.next {
+    font-size: 50px;
+    color: white;
+}
+// .merc-content{
+//     position: absolute;
+//     top: 40px;
+//     left: 100px;
+//     width: 100%;
+// }
+
+.merc-carousel-content {
+    // position: absolute;
+    // top: 40px;
+    // left: 100px;
+    text-align: left;
+    top: 5%;
+    width: 50%;
+    h3 {
+        color: white;
+        font-size: 44px;
+        margin-bottom: 50px;
+        width: 90%;
+        
+    }
+    .digital{
+        color:#333;
+    }
+    button {
+        color: white;
+        padding: 7px 20px;
+        border: none;
+        @include styleButton($color-black-1, $color-black-1);
+    }
+}
+
+#carouselMerc .carousel-caption h3 {
+    animation: Heading 0.8s 0.8s forwards;
+}
+#carouselMerc .carousel-caption button {
+    animation: Learn 0.9s 0.9s forwards;
+}
+#carouselMerc .merc-carousel-smDevice h3 {
+    animation: Heading-sm 0.8s 0.8s forwards;
+}
+#carouselMerc .merc-carousel-smDevice button {
+    animation: Learn-sm 0.9s 0.9s forwards;
+}
+@keyframes Heading {
+    0% {
+        transform: translateY(-55px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes Learn {
+    0% {
+        transform: translateY(-85px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes Heading-sm {
+    0% {
+        transform: translateY(-36px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.merc-carousel-smDevice {
+    padding: 30px 20px 70px;
+    display: none;
+    button {
+        padding: 5px 20px;
+        background-color: #333;
+
+        border: 1px solid $color-black-1;
+        color: white;
+        &:hover {
+            background-color: $color-black-1;
+        }
+    }
+}
+@keyframes Learn-sm {
+    0% {
+        transform: translateY(-60px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@media screen and (max-width: 992px) {
+  .merc-carousel-content{
+      h3{
+          font-size: 30px;
+      }
+  }
+  .previous,
+  .next {
+      transform: translateY(50px);
+  }
+}
+@media screen and (max-width: 768px) {
+    .merc-carousel-content {
+        display: none;
+    }
+    .merc-carousel-smDevice {
+        display: block;
+        background: white;
+    }
+    .previous,
+    .next {
+        transform: translateY(-55px);
+    }
+}
